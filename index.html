@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<div class = "container" id="page1"> 
+    <button class="submit" onclick="return handlePage1Click();" type="submit">Start</button>
+</div>
+
+
+<div class = "container" id ="page2">
+ <div id="time_left"></div>
+ <button id="start">Start</button>
+ <button id="stop">Stop</button>
+  
+<form name="quiz" method="post" name="buttons" id="quiz" onsubmit = "return false">
+
+<ol><li><div class="question"><h3>Who is making the Web standars?</h3></div></li>
+<input id="answer1" type="radio" name="group1" value="wrong"> Microsoft &nbsp
+<input id="answer2" type="radio" name="group1" value="wrong"> Google &nbsp
+<input id="answer3" type="radio" name="group1" value="wrong"> Mozilla &nbsp
+<input id="answer4" type="radio" name="group1" value="correct"> The World Wide Web Consortium&nbsp
+
+<li><div class="question"><h3>What is the correct HTML element for inserting a line break?</h3></div></li>
+<input id="answer5" type="radio" name="group2" value="wrong">< html > &nbsp
+<input id="answer6" type="radio" name="group2" value="wrong">< lb > &nbsp
+<input id="answer7" type="radio" name="group2" value="wrong">< hr > &nbsp
+<input id="answer8" type="radio" name="group2" value="correct">< br >&nbsp
+
+<li><div class="question"><h3>How can you open a link in a new tab/browser window?</h3></div></li>
+<input id="answer9" type="radio" name="group3" value="correct">< a href="url" target="_blank" >&nbsp
+<input id="answer10" type="radio" name="group3" value="wrong">< a href="url" new >&nbsp
+<input id="answer11" type="radio" name="group3" value="wrong">< a href="url" target="new" >&nbsp
+<input id="answer12" type="radio" name="group3" value="wrong">< a href="url" target="new_blank" >&nbsp
+
+<li><div class="question"><h3>Which of these elements are all < table > elements?</h3></div></li>
+<input id="answer5" type="radio" name="group4" value="wrong">< table >< head >< tfoot >&nbsp
+<input id="answer6" type="radio" name="group4" value="wrong">< thead >< body >< tr >&nbsp
+<input id="answer7" type="radio" name="group4" value="correct">< table >< tr >< td >&nbsp
+<input id="answer8" type="radio" name="group4" value="wrong">< table >< tr >< tt >&nbsp
+
+<li><div class="question"><h3>Inline elements are normally displayed without starting a new line.</h3></div></li>
+<input id="answer7" type="radio" name="group5" value="wrong">false&nbsp
+<input id="answer8" type="radio" name="group5" value="correct">true&nbsp
+
+<li><div class="question"><h3>How can you make a numbered list?</h3></div></li>
+<input id="answer5" type="radio" name="group6" value="wrong">< ul >&nbsp
+<input id="answer6" type="radio" name="group6" value="wrong">< list >&nbsp
+<input id="answer7" type="radio" name="group6" value="wrong">< num >&nbsp
+<input id="answer8" type="radio" name="group6" value="correct">< ol >&nbsp
+
+<li><div class="question"><h3>What is the correct HTML for making a checkbox?</h3></div></li>
+<input id="answer5" type="radio" name="group7" value="wrong">< checkbox >&nbsp
+<input id="answer6" type="radio" name="group7" value="wrong">< check >&nbsp
+<input id="answer7" type="radio" name="group7" value="correct">< input type="checkbox" >&nbsp
+<input id="answer8" type="radio" name="group7" value="wrong">< input type="check" >&nbsp
+
+<li><div class="question"><h3>What is the correct HTML for making a text input field?</h3></div></li>
+<input id="answer5" type="radio" name="group8" value="wrong">< textfield >&nbsp
+<input id="answer6" type="radio" name="group8" value="correct">< input type="text" >&nbsp
+<input id="answer7" type="radio" name="group8" value="wrong">< textinput type="text" >&nbsp
+<input id="answer8" type="radio" name="group8" value="wrong">< input type="textfield" >&nbsp
+
+<li><div class="question"><h3>What is the correct HTML for making a drop-down list?</h3></div></li>
+<input id="answer5" type="radio" name="group9" value="wrong">< list >&nbsp
+<input id="answer6" type="radio" name="group9" value="correct">< select >&nbsp
+<input id="answer7" type="radio" name="group9" value="wrong">< input type="list" >&nbsp
+<input id="answer8" type="radio" name="group9" value="wrong">< input type="dropdown" >&nbsp
+
+<li><div class="question"><h3>Choose the correct HTML element to define important text</h3></div></li>
+<input id="answer" type="radio" name="group10" value="wrong">< br >&nbsp
+<input id="answer" type="radio" name="group10" value="wrong"> < important >&nbsp
+<input id="answer" type="radio" name="group10" value="correct">< strong >&nbsp
+<input id="answer" type="radio" name="group10" value="wrong"> < i >&nbsp</ol>
+
+
+
+<button class="submit" onclick="return handlePage2Click();" type="submit">Submit</button>
+    
+</form>
+</div>
+
+<div class = "container" id="page3"> 
+    <h3>Your trivia game result</h3>
+    <div id = "correctAns"></div>
+    <div id = "wrongAns"></div>
+    <div id = "unAns"></div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src= "assets/javascript/app.js"></script>
+
+
+</body>
+</html>

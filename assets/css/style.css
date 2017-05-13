@@ -1,0 +1,30 @@
+body {
+      font-family: verdana, arial, sans-serif;
+    }
+
+.container {
+      width: 960px;
+
+      margin: 0 auto;
+      background: lightblue;
+    }
+    
+button {
+      width: 100px;
+      height: 40px;
+    }
+    
+#page1{
+      height: 800px;
+}
+
+#page2{
+      visibility: hidden;
+      margin-top: -700px;
+    }
+    
+#page3{
+      visibility: hidden;
+      height: 800px;
+      margin-top: -900px;
+    }
