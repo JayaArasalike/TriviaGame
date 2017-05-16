@@ -1,4 +1,4 @@
-	var number = 100;
+	var number = 101;
   var intervalId;
     
 	function run() {
@@ -15,10 +15,11 @@
   //  The decrement function.
   function decrement() {
       number = number-1;
-      $("#time_left").html("<h2>" + number + "</h2>");
+      $("#time_left").html("<h3>" + " Time Remaining: " + number + "</h3>");
         if (number === 0) {
           stop();
           alert("Time Up!");
+          handlePage2Click();
       }
     }
 
@@ -59,11 +60,12 @@
     }
 
   function handlePage1Click() {
+      run();
       var page1 = document.getElementById('page1');
       page1.style.visibility = "hidden";
       var page2 = document.getElementById('page2');
       page2.style.visibility = "visible";
-      run();
+      
     }
 
      

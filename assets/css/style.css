@@ -1,12 +1,21 @@
 body {
       font-family: verdana, arial, sans-serif;
+      font-size: 1em;
+      background-image: url("../../assets/images/trivia.jpeg");
     }
 
 .container {
       width: 960px;
-
+      height: 900px;
       margin: 0 auto;
-      background: lightblue;
+    }
+
+h1 {
+      font-family: verdana;
+      text-align: center;
+      color:  #F0F5F8;
+      font-size: 2.75em;
+      padding-top: 400px;
     }
     
 button {
@@ -14,17 +23,40 @@ button {
       height: 40px;
     }
     
-#page1{
-      height: 800px;
+#page1 {
+      width: 960px;
+      height: 960px;
+      margin: 0 auto;
+      background: #1965C3;
+      padding: 1%;
+      text-align: center;
 }
 
-#page2{
+#page2 {
       visibility: hidden;
-      margin-top: -700px;
+      margin-top: -990px;
+      background: #1965C3;
+      color:  #F0F5F8;
+      padding: 2%;
+      font-family: verdana;
+      overflow: auto;
+    }
+
+#page2 h2 {
+      text-align: center;
+    }
+#time_left {
+      text-align: right;
     }
     
-#page3{
+#page3 {
       visibility: hidden;
-      height: 800px;
-      margin-top: -900px;
+      height: 960px;
+      background: #1965C3;
+      color:  #F0F5F8;
+      margin-top: -960px;
+      font-family: verdana;
+      padding: 1%;
+      text-align: center;
+      padding-top: 10%;
     }
