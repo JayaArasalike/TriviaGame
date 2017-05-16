@@ -1,4 +1,4 @@
-	var number = 101;
+	var number = 100;
   var intervalId;
     
 	function run() {
@@ -9,13 +9,11 @@
       clearInterval(intervalId);
     }
 
-  $("#stop").on("click", stop);
-  $("#start").on("click", run);
     
-  //  The decrement function.
+  //  The decrement function - countdown timer and calls handlePage2Click incase time is up before you complete quiz
   function decrement() {
       number = number-1;
-      $("#time_left").html("<h3>" + " Time Remaining: " + number + "</h3>");
+      $("#timer").html(number);
         if (number === 0) {
           stop();
           alert("Time Up!");
@@ -23,7 +21,7 @@
       }
     }
 
-
+  // The quiz is submitted
   function handlePage2Click() {         
       var amountCorrect = 0;
       var amountWrong = 0;
@@ -59,7 +57,9 @@
       document.getElementById('unAns').innerHTML = "Unanswered: " + unanswered;
     }
 
+  // When you click the start button, following code calls timer function and sets visibilty of page1 to hide & page 2 to visible
   function handlePage1Click() {
+      $("#timer").html(number);
       run();
       var page1 = document.getElementById('page1');
       page1.style.visibility = "hidden";
